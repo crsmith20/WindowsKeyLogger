@@ -9,7 +9,17 @@ Please tell us how to build and run your code. This needs to be just a few lines
 My program, cool_prog, does really cool things. It uses the pthread library and takes in three arguments. See the following instructions for building and running it:
 
 ```
+// if compiled on terminal
 cd project-directory
-gcc -Wall -pthread my_cool_program.c -o cool_prog
-./cool_prog arg1 arg2 'hello world'
+g++ -g -Wall -o logger logger.cpp
+./logger
+// can close terminal while running and keeps working
 ```
+```
+// if compiled on command prompt
+cd project-directory
+g++ -Wall -o -static-libstdc++ logger.cpp
+-static-libstdc++ on command prompt, otherwise run executable
+// will only run while window or command prompt stays open
+```
+
