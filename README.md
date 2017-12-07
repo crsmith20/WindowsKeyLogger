@@ -4,7 +4,7 @@ See instructions here: https://www.cs.usfca.edu/~mmalensek/courses/cs220/assignm
 
 ## Usage Instructions
 
-My program logger is a keylogger implemented in C++. This program only works for Windows machines since it is based on the windows library allowing to hook input from the machine. By hooking keys typed, writes to file after each keystroke. There is an occasional error where when reading keystrokes, it is read as two inputs, one for being pressed and one for being released. This has been more prominently seen when compiled through command prompt. Another issue that has been observed is that when trying to record an input that requires to hit shift before getting a the desired key(e.g. "[shift] 90" on the log would really be keys "()"). Another issue arises when caps lock when the key is pressed. It then becomes the opposite of what it is meant to do for the program(example below).
+My program logger is a keylogger implemented in C++. This program only works for Windows machines since it is based on the windows library allowing to hook input from the machine. By hooking keys typed, writes to file after each keystroke. There is an occasional error where when reading keystrokes, it is read as two inputs, one for being pressed and one for being released. This has been more prominently seen when compiled through command prompt. Another issue that has been observed is that when trying to record an input that requires to hit shift before getting a the desired key(e.g. "[shift] 90" on the log would really be keys "()"). Another issue arises when caps lock is already on when the program starts and then the key is pressed. It then becomes the opposite of what it is meant to do for the program(example below).
 
 ```
 /* caps lock is already on */
