@@ -2,7 +2,7 @@
 
 ## Program Goals
 
-1. Goal one
+1. Create a keylogger for Windows machines
 2. Goal two
 3. Goal three
 
