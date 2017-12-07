@@ -8,14 +8,14 @@ My program logger is a keylogger implemented in C++. This program only works for
 
 ```
 /* caps lock is already on */
-// actuallly input
+// actual input
 TEST WORDS
 // log entry
 test words
 ```
 ```
 /* caps lock is turned off */
-// actually input
+// actual input
 test words
 // log entry
 TEST WORDS
