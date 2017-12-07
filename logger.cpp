@@ -28,22 +28,25 @@ __declspec(dllexport) LRESULT CALLBACK handlekeys(int code, WPARAM wp, LPARAM lp
         int i = 0;
         
         // lowers string
-        for (; i < str.length(); i++) {
-            str[i] = tolower(str[i]);
-        }
+       
 
         printable = (str.length() <= 1) ? true : false;
 
+        // handles keys that are more than one character
         // takes care of issues such as keys: TAB, ENTER, SPACE
         if (!printable) {
-            // keys are handled
-            if (str == "capslock")
-                capslock = !capslock;
-            else if (str == "shift")
-                shift = true;
 
-            // handles keys that are more than one character
-            if (str == "enter") {
+            for (; i < str.length(); i++) {
+                str[i] = tolower(str[i]);
+            }
+
+            // keys are handled
+            if (str == "caps lock") {
+                capslock = !capslock;
+            } else if (str == "shift") {
+                str = "";
+                shift = true;
+            } else if (str == "enter") {
                 str = "\n";
                 printable = true;
             } else if (str == "space") {
