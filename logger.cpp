@@ -42,6 +42,7 @@ __declspec(dllexport) LRESULT CALLBACK handlekeys(int code, WPARAM wp, LPARAM lp
 
             // keys are handled
             if (str == "caps lock") {
+                str = "";
                 capslock = !capslock;
             } else if (str == "shift") {
                 str = "";
